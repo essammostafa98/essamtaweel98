@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <header>
+        <form name="show" class="show">
+          <input type="text" class="input" name="show" id="input" />
+          <input value="<" class="back" onclick="backIt()" readonly></input>
+        </form>
+      </header>
+      <div class="main">
+        <div class="first">
+          <div
+            value="AC"
+            onclick="clearInput()"
+            class="button button__big button--red"
+          >
+            <span>AC</span>
+          </div>
+          <div value="/" onclick="insert('/')" class="button button__operant">
+            <span>/</span>
+          </div>
+          <div value="X" onclick="insert('*')" class="button button__operant">
+            <span>X</span>
+          </div>
+        </div>
+        <div class="second">
+          <div value="7" onclick="insert(7)" class="button button__number">
+            <span>7</span>
+          </div>
+          <div value="8" onclick="insert(8)" class="button button__number">
+            <span>8</span>
+          </div>
+          <div value="9" onclick="insert(9)" class="button button__number">
+            <span>9</span>
+          </div>
+          <div value="-" onclick="insert('-')" class="button button__operant">
+            <span>-</span>
+          </div>
+        </div>
+        <div class="third">
+          <div value="4" onclick="insert(4)" class="button button__number">
+            <span>4</span>
+          </div>
+          <div value="5" onclick="insert(5)" class="button button__number">
+            <span>5</span>
+          </div>
+          <div value="6" onclick="insert(6)" class="button button__number">
+            <span>6</span>
+          </div>
+          <div value="+" onclick="insert('+')" class="button button__operant">
+            <span>+</span>
+          </div>
+        </div>
+        <div class="fourth">
+          <div value="1" onclick="insert(1)" class="button button__number">
+            <span>1</span>
+          </div>
+          <div value="2" onclick="insert(2)" class="button button__number">
+            <span>2</span>
+          </div>
+          <div value="3" onclick="insert(3)" class="button button__number">
+            <span>3</span>
+          </div>
+        </div>
+
+        <div class="five">
+          <div
+            value="0"
+            onclick="insert(0)"
+            class="button button__number button__big"
+          >
+            <span>0</span>
+          </div>
+          <div value="." onclick="insert('.')" class="button button__operant">
+            <span>.</span>
+          </div>
+        </div>
+        <div
+          value="="
+          onclick="calculateResult()"
+          class="button button__big button--blue"
+        >
+          <span>=</span>
+        </div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
